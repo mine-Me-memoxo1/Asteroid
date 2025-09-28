@@ -13,6 +13,7 @@ def main():
     while 1:
         screen.fill('black')
         player.draw(screen)
+        player.update(dt)
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
